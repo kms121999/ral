@@ -18,7 +18,7 @@ find(Tree, Traversal_list_binary) -> Value;
 find(nil, Traversal_list_binary) -> nil;
 find({Element, _, _}, []) -> Element;
 find({_, Next_l, _}, [0|T]) -> find(Next_l, T);
-find({_, Next_l, _}, [1|T]) -> find(Next_r, T)
+find({_, Next_l, _}, [1|T]) -> find(Next_r, T).
 
 update(Tree, Index, Value, Acc_skipped) ->
     todo.
